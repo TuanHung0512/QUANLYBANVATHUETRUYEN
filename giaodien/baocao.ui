@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BaoCaoDoanhThu</class>
+ <widget class="QWidget" name="BaoCaoDoanhThu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Báo Cáo Doanh Thu</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_ban">
+     <property name="text">
+      <string>Doanh thu bán: Đang tải...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_thue">
+     <property name="text">
+      <string>Doanh thu thuê: Đang tải...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_tong">
+     <property name="text">
+      <string>Tổng doanh thu: Đang tải...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_capnhat">
+     <property name="text">
+      <string>Làm mới</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_quaylai5">
+     <property name="text">
+      <string>Quay lại</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

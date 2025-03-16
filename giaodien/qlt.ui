@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qlt</class>
+ <widget class="QMainWindow" name="qlt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QUẢN LÝ TRUYỆN</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>271</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;QUẢN LÝ TRUYỆN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_timkiemt">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TÌM KIẾM</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditTenTruyen">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>821</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TÊN TRUYỆN</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>THỂ LOẠI</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TÁC GIẢ </string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SỐ LƯỢNG</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GIÁ BÁN</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GIÁ THUÊ</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>PHÁT HÀNH</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btn_themt">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>300</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>THÊM TRUYỆN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_suat">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>300</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SỬA TRUYỆN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_xoat">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>300</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>XÓA TRUYỆN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_quaylai1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QUAY LẠI</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>851</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../anhnen/R.jpg</pixmap>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>btn_timkiemt</zorder>
+   <zorder>lineEditTenTruyen</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>btn_themt</zorder>
+   <zorder>btn_suat</zorder>
+   <zorder>btn_xoat</zorder>
+   <zorder>btn_quaylai1</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
