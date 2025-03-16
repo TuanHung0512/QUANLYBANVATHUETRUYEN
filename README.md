@@ -10,7 +10,7 @@ Visual Studio Code (hoặc bất kỳ IDE nào hỗ trợ Python ví dụ như p
 
 Các thư viện Python cần thiết (xem phần Cài Đặt)
 
-3. Cấu Trúc Thư Mục
+2. Cấu Trúc Thư Mục
 
 📦 btl/  
  ├── 📄 README.md               # Hướng dẫn sử dụng  
@@ -35,7 +35,7 @@ Các thư viện Python cần thiết (xem phần Cài Đặt)
  ├── 📂 anhnen/                 # Chứa ảnh nền  
  │   ├── R.jpg  
  
-4. Cài Đặt
+3. Cài Đặt
 
 3.1 Cài Đặt Python và Thư Viện Phụ Thuộc
 
@@ -61,7 +61,7 @@ Mở file có phần kết nối MySQL (chucnang/main.py, chucnang/login.py, ...
 
 Sửa thông tin user, password, host nếu cần.
 
-6. Chạy Chương Trình
+4. Chạy Chương Trình
 
 Mở Visual Studio Code.
 
@@ -71,7 +71,7 @@ Chạy chương trình bằng lệnh:
 
 python chucnang/login.py
 
-8. Lưu Ý
+5. Lưu Ý
 
 Đảm bảo MySQL đang chạy trước khi khởi động chương trình.
 
