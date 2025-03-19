@@ -234,7 +234,7 @@ class QLBT(QtWidgets.QMainWindow):
         layout = QtWidgets.QVBoxLayout()
         self.table_chi_tiet = QtWidgets.QTableWidget(self)
         self.table_chi_tiet.setColumnCount(6)
-        self.table_chi_tiet.setHorizontalHeaderLabels(["Mã CT", "Mã Đơn", "Mã Truyện", "Số Lượng", "Đơn Giá", "Thành Tiền"])
+        self.table_chi_tiet.setHorizontalHeaderLabels(["Mã CT", "Mã Đơn", "Tên Truyện", "Số Lượng", "Đơn Giá", "Thành Tiền"])
 
         layout.addWidget(self.table_chi_tiet)
         self.load_chi_tiet_don_ban(madonban)
@@ -250,18 +250,21 @@ class QLBT(QtWidgets.QMainWindow):
         """Lấy dữ liệu từ database và hiển thị trên bảng chi tiết."""
         try:
             self.cursor.execute(
-                "SELECT machitiet, madonban, matruyen, soluong, dongia, thanhtien FROM tbchitietdonban WHERE madonban = %s",
+                """SELECT c.machitiet, c.madonban, t.tentruyen, c.soluong, c.dongia, c.thanhtien 
+                FROM tbchitietdonban c
+                JOIN tbtruyen t ON c.matruyen = t.matruyen
+                WHERE c.madonban = %s""",
                 (madonban,)
             )
             data = self.cursor.fetchall()
             self.table_chi_tiet.setRowCount(len(data))
-        
+    
             for row_idx, row_data in enumerate(data):
                 for col_idx, value in enumerate(row_data):
                     self.table_chi_tiet.setItem(row_idx, col_idx, QtWidgets.QTableWidgetItem(str(value)))
         except mysql.connector.Error as err:
             QtWidgets.QMessageBox.critical(self, "Lỗi", f"Lỗi khi tải dữ liệu: {err}")
-    
+
     def show_sua_don_ban(self):
         """Mở form sửa đơn bán khi chọn một đơn."""
         selected_row = self.tableWidget.currentRow()

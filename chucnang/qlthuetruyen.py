@@ -92,7 +92,9 @@ class QLTT(QMainWindow):
     def tim_kiem_donthue(self):
         tu_khoa = self.lineEditThueTruyen.text().strip()  # Lấy nội dung từ ô tìm kiếm
         if not tu_khoa:
-            QMessageBox.warning(self, "Lỗi", "Vui lòng nhập mã đơn cần tìm!")
+            self.load_data()  # Gọi lại hàm load tất cả đơn thuê
+            so_luong = self.tableWidget.rowCount()
+            QMessageBox.information(self, "Kết quả tìm kiếm", f"Tìm thấy {so_luong} đơn thuê.")
             return
         try:
             self.connect_db()  # Kết nối database
